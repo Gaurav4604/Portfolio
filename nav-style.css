@@ -1,0 +1,32 @@
+.nav-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+}
+
+.nav-icon img{
+    position: absolute;
+    transition: all 1s ease;
+}
+.nav-icon img:nth-child(2){
+    opacity: 0;
+}
+
+.nav-icon.active img:nth-child(1){
+    opacity: 0;
+}
+
+.nav-icon.active img:nth-child(2){
+    opacity: 1;
+}
+
+.navbar{
+    height: 50vh;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}

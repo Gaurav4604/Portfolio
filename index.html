@@ -3,26 +3,56 @@
   <head>
     <meta charset="utf-8" />
     <title>Portfolio</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <link rel="stylesheet" media="screen" href="Components/home/styles/layout.css" />
-    <link rel="stylesheet" media="screen" href="Components/home/styles/typing.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="nav-style.css">
   </head>
-  <body>
-    <div id="particles-js">
-      <div class="card">
-        <div class="img-border">
-          <div class="img-value"></div>
-        </div>
-        <p id="title">Gaurav Singh</p>
-        <p id="typing"></p>
-      </div>
-    </div>
 
-    <script src="Components/home/scripts/particles.js"></script>
-    <script src="Components/home/scripts/particles-home.js"></script>
-    <script src="Components/home/scripts/typing.js"></script>
+  <body>
+      <div class="container">
+
+        <div class="widgets">
+          <nav class="navbar">
+            <div class="nav-icon">
+              <img src="Icons/home-inactive.svg">
+              <img src="Icons/home.svg">
+            </div>
+  
+            <div class="nav-icon active">
+              <img src="Icons/profile-inactive.svg">
+              <img src="Icons/profile.svg">
+            </div>
+  
+            <div class="nav-icon">
+              <img src="Icons/skills-inactive.svg">
+              <img src="Icons/skills.svg">
+            </div>
+  
+            <div class="nav-icon">
+              <img src="Icons/resume-inactive.svg">
+              <img src="Icons/resume.svg">
+            </div>
+  
+            <div class="nav-icon">
+              <img src="Icons/contact-inactive.svg">
+              <img src="Icons/contact.svg">
+            </div>
+          </nav>
+        </div>
+
+        <section id="intro">
+          
+        </section>
+
+      </div>
+
+      <script>
+        let nodes = document.querySelectorAll('.nav-icon');
+        for (let node of nodes){
+          node.addEventListener('click', () => {
+            node.classList.toggle('active');
+          })
+        }
+      </script>
   </body>
 </html>
