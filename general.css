@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar{
@@ -30,15 +32,16 @@ body{
     height: 10vh;
     width: 100vw;
     display: flex;
+    padding-top: 1rem;
     align-items: center;
     margin: 0 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .content{
     width: 94vw;
     height: 90vh;
     overflow-y: scroll;
-    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
 
