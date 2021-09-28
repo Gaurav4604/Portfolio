@@ -1,12 +1,15 @@
 .nav-icon{
+    background-color: transparent;
     display: flex;
     align-items: center;
+    cursor: pointer;
     justify-content: center;
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .nav-icon img{
+    background-color: transparent;
     position: absolute;
     transition: all 1s ease;
 }
@@ -23,10 +26,23 @@
 }
 
 .navbar{
-    height: 50vh;
+    height: 60vh;
     width: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: transparent;
+}
+
+#focus{
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    background-color: #42e7bb;
+    transition: all 1s ease;
+}
+
+.logo img{
+    transition: all 1s ease;
 }

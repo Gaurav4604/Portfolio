@@ -4,55 +4,70 @@
     <meta charset="utf-8" />
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" type="image/jpg" href="logo.svg"/>
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="nav-style.css">
   </head>
 
   <body>
-      <div class="container">
+    <div class="top-nav-bar">
+      <div class="logo">
+        <img src="logo.svg">
+      </div>
+    </div>
 
-        <div class="widgets">
-          <nav class="navbar">
-            <div class="nav-icon">
-              <img src="Icons/home-inactive.svg">
-              <img src="Icons/home.svg">
-            </div>
-  
-            <div class="nav-icon active">
-              <img src="Icons/profile-inactive.svg">
-              <img src="Icons/profile.svg">
-            </div>
-  
-            <div class="nav-icon">
-              <img src="Icons/skills-inactive.svg">
-              <img src="Icons/skills.svg">
-            </div>
-  
-            <div class="nav-icon">
-              <img src="Icons/resume-inactive.svg">
-              <img src="Icons/resume.svg">
-            </div>
-  
-            <div class="nav-icon">
-              <img src="Icons/contact-inactive.svg">
-              <img src="Icons/contact.svg">
-            </div>
-          </nav>
-        </div>
-
-        <section id="intro">
+    <div class="container">
+      <div class="widgets">
+        <nav class="navbar">
+          <div id="focus"></div>
           
-        </section>
+          <div class="nav-icon active">
+            <img src="Icons/home-inactive.svg">
+            <img src="Icons/home.svg">
+          </div>
 
+          <div class="nav-icon">
+            <img src="Icons/profile-inactive.svg">
+            <img src="Icons/profile.svg">
+          </div>
+
+          <div class="nav-icon">
+            <img src="Icons/skills-inactive.svg">
+            <img src="Icons/skills.svg">
+          </div>
+
+          <div class="nav-icon">
+            <img src="Icons/resume-inactive.svg">
+            <img src="Icons/resume.svg">
+          </div>
+
+          <div class="nav-icon">
+            <img src="Icons/contact-inactive.svg">
+            <img src="Icons/contact.svg">
+          </div>
+        </nav>
       </div>
 
-      <script>
-        let nodes = document.querySelectorAll('.nav-icon');
-        for (let node of nodes){
-          node.addEventListener('click', () => {
-            node.classList.toggle('active');
-          })
-        }
-      </script>
+      <article class="content">
+        <section id="home">
+          <h1>Home</h1>
+        </section>
+        <section id="profile">
+          <h1>Profile</h1>
+        </section>
+        <section id="skills">
+          <h1>Skills</h1>
+        </section>
+        <section id="projects">
+          <h1>Projects and Experience</h1>
+        </section>
+        <section id="contact">
+          <h1>Contact me</h1>
+        </section>
+      </article>
+
+    </div>
+
+      <script src="side-nav.js"></script>
   </body>
 </html>
