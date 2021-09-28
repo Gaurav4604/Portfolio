@@ -3,47 +3,54 @@
   <head>
     <meta charset="utf-8" />
     <title>Portfolio | Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="shortcut icon" type="image/jpg" href="logo.svg"/>
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="nav-style.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="logo.svg" />
+    <link rel="stylesheet" href="Styles/general.css" />
+    <link rel="stylesheet" href="Styles/profile.css" />
+    <link rel="stylesheet" href="Styles/side-navbar.css" />
   </head>
-
   <body>
     <div class="top-nav-bar">
       <div class="logo">
-        <img src="logo.svg">
+        <img src="Assets/General/logo.svg"/>
       </div>
+
+      <button class="btn">
+        <p>Resume</p>
+      </button>
     </div>
 
     <div class="container">
       <div class="widgets">
         <nav class="navbar">
           <div id="focus"></div>
-          
+
           <a href="#home" class="nav-icon active">
-            <img src="Icons/home-inactive.svg">
-            <img src="Icons/home.svg">
+            <img src="Icons/home-inactive.svg" />
+            <img src="Icons/home.svg" />
           </a>
 
           <a href="#profile" class="nav-icon">
-            <img src="Icons/profile-inactive.svg">
-            <img src="Icons/profile.svg">
+            <img src="Icons/profile-inactive.svg" />
+            <img src="Icons/profile.svg" />
           </a>
 
           <a href="#skills" class="nav-icon">
-            <img src="Icons/skills-inactive.svg">
-            <img src="Icons/skills.svg">
+            <img src="Icons/skills-inactive.svg" />
+            <img src="Icons/skills.svg" />
           </a>
 
           <a href="#projects" class="nav-icon">
-            <img src="Icons/resume-inactive.svg">
-            <img src="Icons/resume.svg">
+            <img src="Icons/resume-inactive.svg" />
+            <img src="Icons/resume.svg" />
           </a>
 
           <a href="#contact" class="nav-icon">
-            <img src="Icons/contact-inactive.svg">
-            <img src="Icons/contact.svg">
+            <img src="Icons/contact-inactive.svg" />
+            <img src="Icons/contact.svg" />
           </a>
         </nav>
       </div>
@@ -53,7 +60,35 @@
           <h1>Home</h1>
         </section>
         <section id="profile">
-          <h1>Profile</h1>
+          <div class="image">
+            <img src="Assets/Profile/gaurav.jpeg" />
+          </div>
+          <div class="design">
+            <img src="Assets/Profile/circle.svg" />
+            <img src="Assets/Profile/line.svg" />
+          </div>
+          <div class="text">
+            <h1>Hi There!</h1>
+            <p>
+              I'm a simple guy from Nagpur, Maharashtra, currently pursuing a
+              bachelors degree in Computer Science at
+              <br />
+              <b>Vellore Institute of Technology, (Vellore branch).</b>
+              <br />
+              I'm looking for careers in Software Development and Testing. I have an experience of
+              two and half years with various languages, with exposure in Full stack web development,
+              cross-platform App development and Basic Machine Learning.
+              I've done a internship for
+               <a href="https://www.s20.ai/">S20.AI</a>
+               , making a cross-platform mobile application named 
+               <a href="https://safecam.ai/">SafeCam mobile,</a>
+               <br>
+               <a href="https://play.google.com/store/apps/details?id=ai.s20.safecam">live at google playStore.</a>
+               <br>
+               I'm currently interning for 
+               <a href="https://www.persistent.com/">Persistent Systems Pvt. Ltd.</a>
+            </p>
+          </div>
         </section>
         <section id="skills">
           <h1>Skills</h1>
@@ -65,9 +100,8 @@
           <h1>Contact me</h1>
         </section>
       </article>
-
     </div>
 
-      <script src="side-nav.js"></script>
+    <script src="side-nav.js"></script>
   </body>
 </html>
