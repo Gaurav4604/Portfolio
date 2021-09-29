@@ -42,7 +42,7 @@ set_focus();
 
 let content = document.querySelector('.content');
 
-let logo = document.querySelector('.logo img');
+let logo = document.querySelector('.logo');
 
 content.addEventListener('scroll', () => {
   logo.style.transform = "rotate("+(content.scrollTop/3)+"deg)";

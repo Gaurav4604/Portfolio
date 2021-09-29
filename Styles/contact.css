@@ -1,0 +1,38 @@
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.3rem solid white;
+}
+.contact-form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form #info{
+    padding: 3rem 3rem;
+    width: 70%;
+    height: 100%;
+}
+
+.contact-form #links{
+    width: 30%;
+    height: 100%;
+}
+
+.contact-form #info > h1{
+    color: rgba(71, 255, 206, 1);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: 10%;
+    line-height: 4rem;
+}

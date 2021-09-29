@@ -12,6 +12,9 @@
 .nav-icon img{
     background-color: transparent;
     position: absolute;
+    height: 2.7rem;
+    width: 2.7rem;
+    display: block;
     transition: all 1s ease;
 }
 .nav-icon img:nth-child(2){
@@ -28,6 +31,7 @@
 
 .navbar{
     height: 60vh;
+    margin-bottom: 2rem;
     width: inherit;
     display: flex;
     flex-direction: column;
@@ -44,7 +48,8 @@
     transition: all 1s ease;
 }
 
-.logo img{
-    padding: 4rem;
+.logo{
     transition: all 1s ease;
+    margin-left: 4rem;
+    margin-top: 1rem;
 }
