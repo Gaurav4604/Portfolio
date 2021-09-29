@@ -1,4 +1,4 @@
-#profile > #profile-container{
+#profile{
     margin: auto;
     width: 95%;
     display: flex;
@@ -7,40 +7,41 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#profile > #profile-container .image, #profile > #profile-container .text{
+#profile .image, #profile .text{
     height: 90%;
     width: 33%;
 }
 
-#profile > #profile-container .image{
+#profile .image{
     border-radius: 0 3rem 0 3rem;
 }
 
-#profile > #profile-container .design{
+#profile .design{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-#profile > #profile-container .image img{
-    width: 100%;
+#profile .image img{
+    width: 98%;
     height: 100%;
+    border-radius: 0 3rem 0 3rem;
     display: block;
 }
 
-#profile > #profile-container .design img:first-child{
+#profile .design img:first-child{
     height: 1rem;
     width: 1.5rem;
     margin-bottom: 1rem;
 }
 
-#profile > #profile-container .design img:last-child{
+#profile .design img:last-child{
     height: 12rem;
     width: 1.5rem;
 }
 
-#profile > #profile-container .text h1{
+#profile .text h1{
     font-weight: 500;
     font-size: 5rem;
     letter-spacing: 0.5rem;
@@ -49,7 +50,7 @@
     margin-bottom: 1rem;
 }
 
-#profile > #profile-container .text p{
+#profile .text p{
     height: 80%;
     font-weight: 400;   
     font-size: 1rem;
@@ -59,17 +60,17 @@
     overflow: scroll;
     color: white;
 }
-#profile > #profile-container .text p > a{
+#profile .text p > a{
     text-decoration: none;
     color: rgba(154, 71, 255, 1);
 }
 
-#profile > #profile-container .text p > a:visited{
+#profile .text p > a:visited{
     text-decoration: none;
     color: #42e7bb;
 }
 
-#profile > #profile-container .text p::selection{
+#profile .text p::selection{
     background: #42e7bb;
     color: #111111;
 }
