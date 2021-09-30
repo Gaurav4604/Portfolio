@@ -42,6 +42,12 @@ body {
   align-items: center;
 }
 
+.logo {
+  transition: all 1s ease;
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+
 .content {
   width: 94vw;
   height: 88vh;
@@ -57,12 +63,12 @@ body {
   position: relative;
 }
 
-.content .line{
-    margin: auto;
-    margin-bottom: 1rem;
-    width: 90%;
-    height: 0.2rem;
-    background-color: white;
+.content .line {
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 90%;
+  height: 0.2rem;
+  background-color: white;
 }
 
 button.btn {

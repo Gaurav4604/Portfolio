@@ -1,122 +1,144 @@
-#contact{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-form{
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 0.3rem solid white;
+.contact-form {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.3rem solid white;
 }
-.contact-form > div{
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form #info{
-    padding: 3rem 3rem;
-    width: 70%;
-    height: 100%;
+.contact-form > div {
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-form #links{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    padding: 2rem;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: column;
+.contact-form #info {
+  padding: 3rem 3rem;
+  width: 70%;
+  height: 100%;
 }
 
-#links > .up-arrow{
-    background-color: #9A47FF;
-    width: 7rem;
-    height: 7rem;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+.contact-form #links {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
-#links > .up-arrow > img{
-    display: block;
-    width: 2.5rem;
-    height: 2.5rem;
+#links > .up-arrow {
+  background-color: #9a47ff;
+  width: 7rem;
+  height: 7rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
-#links > .links-contact{
-    width: 80%;
-    margin-bottom: 3rem;
+#links > .up-arrow > img {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
-#links > .links-contact > a{
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
-    color: #9A47FF;
-    text-decoration: none;
+#links > .links-contact {
+  width: 80%;
+  margin-bottom: 3rem;
 }
 
-#links > .links-contact > a:visited{
-    color: #9A47FF;
+#links > .links-contact > a {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #9a47ff;
+  text-decoration: none;
 }
 
-.contact-form #info > h1{
-    color: rgba(71, 255, 206, 1);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 3rem;
-    letter-spacing: 10%;
-    line-height: 4rem;
+#links > .links-contact > a:visited {
+  color: #9a47ff;
 }
 
-.form{
-    width: 100%;
-    height: 70%;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+.contact-form #info > h1 {
+  color: rgba(71, 255, 206, 1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: 10%;
+  line-height: 4rem;
 }
 
-.form .form-field{
-    display: flex;
-    width: 100%;
+.form {
+  width: 100%;
+  height: 70%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
-.form-field p{
-    width: 15%;
-    margin-top: 1rem;
-    vertical-align: middle;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    margin-right: 1rem;
+.form .form-field {
+  display: flex;
+  width: 100%;
 }
 
-.form-field .input{
-    width: 80%;
-    height: 4rem;
-    outline: none;
-    font-size: 1.5rem;
-    padding: 2rem;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    background-color: transparent;
-    border: 0.2rem solid #9A47FF;
+.form-field p {
+  width: 15%;
+  margin-top: 1rem;
+  vertical-align: middle;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
-.form-field .input.multi-line{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    height: 12rem;
-    resize: none;
-    padding: 1rem 2rem;
+.form-field .input {
+  width: 80%;
+  height: 4rem;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 2rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  border: 0.2rem solid #9a47ff;
+}
+
+.form-field .input.multi-line {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  height: 12rem;
+  resize: none;
+  padding: 1rem 2rem;
+}
+
+button.form-submission {
+  width: 20%;
+  height: 10%;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: transform 0.25s ease;
+  background-color: #9a47ff;
+  font-family: "Poppins", sans-serif;
+}
+
+button.form-submission:hover {
+  transform: scale(1);
+}
+
+button.form-submission:active {
+  transform: scale(0.8);
 }

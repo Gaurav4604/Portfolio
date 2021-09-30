@@ -1,55 +1,49 @@
-.nav-icon{
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    justify-content: center;
-    height: 3.5rem;
-    width: 3.5rem;
+.nav-icon {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
-.nav-icon img{
-    background-color: transparent;
-    position: absolute;
-    height: 2.7rem;
-    width: 2.7rem;
-    display: block;
-    transition: all 1s ease;
+.nav-icon img {
+  background-color: transparent;
+  position: absolute;
+  height: 2.7rem;
+  width: 2.7rem;
+  display: block;
+  transition: all 1s ease;
 }
-.nav-icon img:nth-child(2){
-    opacity: 0;
-}
-
-.nav-icon.active img:nth-child(1){
-    opacity: 0;
+.nav-icon img:nth-child(2) {
+  opacity: 0;
 }
 
-.nav-icon.active img:nth-child(2){
-    opacity: 1;
+.nav-icon.active img:nth-child(1) {
+  opacity: 0;
 }
 
-.navbar{
-    height: 60vh;
-    margin-bottom: 2rem;
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: transparent;
+.nav-icon.active img:nth-child(2) {
+  opacity: 1;
 }
 
-#focus{
-    position: absolute;
-    height: 3rem;
-    width: 3rem;
-    background-color: #42e7bb;
-    transition: all 1s ease;
+.navbar {
+  height: 60vh;
+  margin-bottom: 2rem;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
 }
 
-.logo{
-    transition: all 1s ease;
-    margin-left: 4rem;
-    margin-top: 1rem;
+#focus {
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  background-color: #42e7bb;
+  transition: all 1s ease;
 }

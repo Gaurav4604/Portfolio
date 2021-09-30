@@ -1,0 +1,136 @@
+#projects{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+#projects > h1{
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+    color: #9A47FF;
+    height: 10%;
+}
+
+#projects > .timeline{
+    height: 80%;
+    overflow-y: scroll;
+    max-width: 80%;
+    position: relative;
+}
+
+
+.timeline ul{
+    height: 100%;
+    overflow-y: scroll;
+    list-style: none;
+}
+
+.timeline ul li{
+    padding: 1rem;
+    overflow: visible;
+}
+
+.timeline ul li:first-child{
+    margin-top: 3rem;
+}
+
+.timeline ul li:last-child{
+    margin-bottom: 5rem;
+}
+
+.timeline ul li .date{
+    margin-bottom: 0.1rem;
+    color: #9A47FF;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.timeline ul li .title{
+    color: #47FFCE;
+    letter-spacing: 30%;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.timeline ul li .description{
+    width: 40%;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 768px){
+    .timeline ul li{
+        width: 50%;
+        transition: all 0.5s ease;
+        z-index: 10;
+        height: 50%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .timeline ul li > .description{
+        height: 50%;
+        overflow-y: scroll;
+    }
+
+    .timeline ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        align-items: flex-end;
+        text-align: right;
+        transform: translateX(-1rem);
+    }
+    .timeline ul li:nth-child(even){
+        float: right;
+        clear: left;
+        align-items: flex-start;
+        text-align: left;
+        transform: translateX(1rem);
+    }
+
+    ul::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        width: 0.2rem;
+    }
+
+    .timeline ul li::before{
+        z-index: 10;
+        content: "";
+        transition: all 0.5s ease;
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+        background-color: #111111;
+        border-radius: 50%;
+        border: 0.05rem solid white;
+        top: 10%;
+    }
+
+    .timeline ul li:nth-child(odd)::before{
+        right: -1rem;
+        transform: translate(50%, -50%);
+    }
+
+    .timeline ul li:nth-child(even)::before{
+        left: -1rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .timeline ul li:hover::before{
+        background-color: #47FFCE;
+    }
+}
