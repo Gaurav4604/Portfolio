@@ -20,6 +20,7 @@
 #projects > .timeline{
     height: 80%;
     overflow-y: scroll;
+    overflow: visible;
     max-width: 80%;
     position: relative;
 }
@@ -63,6 +64,21 @@
     width: 40%;
     font-size: 0.8rem;
     font-weight: 400;
+}
+
+#tracker-div{
+    width: 20rem;
+    height: 12rem;
+    border-radius: 1rem;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#tracker-div.active{
+    opacity: 1;
 }
 
 @media only screen and (min-width: 768px){
