@@ -1,4 +1,4 @@
-const nodes = document.querySelectorAll('.timeline-item');
+const nodes = document.querySelectorAll('.timeline-item > div');
 
 const tracker = document.querySelector('#tracker-div');
 
@@ -14,8 +14,8 @@ let divMoveOnMouseEvent = (e) => {
         tracker.classList.add('active');
         flag = true;
     }
-    tracker.style.setProperty('left', `${x - 450}px`);
-    tracker.style.setProperty('top', `${y - 450}px`);
+    tracker.style.setProperty('left', `${x - 250}px`);
+    tracker.style.setProperty('top', `${y - 250}px`);
 }
 
 nodes.forEach((node) => {

@@ -142,3 +142,41 @@ button.form-submission:hover {
 button.form-submission:active {
   transform: scale(0.8);
 }
+
+@media screen and (max-width: 1369px){
+  .contact-form #info > h1 {
+    font-size: 2rem;
+  }
+
+  .form-field p{
+    font-size: 1.2rem;
+  }
+
+  #links > .links-contact > a{
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-height: 839px){
+  .form-field .input{
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .form-field .input.multi-line{
+    height: 9rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-height: 718px){
+  .form-field .input{
+    height: 1.8rem;
+    font-size: 1rem;
+  }
+
+  .form-field .input.multi-line{
+    height: 7rem;
+    font-size: 1rem;
+  }
+}

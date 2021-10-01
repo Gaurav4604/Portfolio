@@ -61,7 +61,7 @@
 }
 
 .timeline ul li .description{
-    width: 40%;
+    /* width: 40%; */
     font-size: 0.8rem;
     font-weight: 400;
 }
@@ -93,16 +93,25 @@
         position: relative;
     }
 
-    .timeline ul li > .description{
-        height: 50%;
+    .timeline ul li  > div{
+        width: 60%;
+    }
+
+    .timeline ul li .description{
         overflow-y: scroll;
+        height: 70%;
+        line-height: 2rem;
+    }
+
+    .description:nth-child(odd){
+        text-align: right;
     }
 
     .timeline ul li:nth-child(odd){
         float: left;
         clear: right;
+        text-align: end;
         align-items: flex-end;
-        text-align: right;
         transform: translateX(-1rem);
     }
     .timeline ul li:nth-child(even){
