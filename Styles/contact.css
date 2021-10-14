@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 0.3rem solid white;
+  background-color: #1D1D1D;
 }
 .contact-form > div {
   display: flex;
@@ -35,8 +35,8 @@
 
 #links > .up-arrow {
   background-color: #9a47ff;
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   margin-top: 2rem;
   margin-right: 2rem;
   display: flex;
@@ -73,8 +73,8 @@
   color: rgba(71, 255, 206, 1);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 3rem;
-  letter-spacing: 10%;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
   line-height: 4rem;
 }
 
@@ -107,10 +107,16 @@
   height: 4rem;
   outline: none;
   font-size: 1.5rem;
+  background-color: #111111;
   padding: 2rem;
   color: white;
+  transition: all 0.5s ease-in-out;
   font-family: "Poppins", sans-serif;
-  background-color: transparent;
+  border: 0.2rem solid transparent;
+}
+
+
+.form-field .input:focus{
   border: 0.2rem solid #9a47ff;
 }
 
@@ -118,6 +124,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   height: 12rem;
+  background-color: #111111;
   resize: none;
   padding: 1rem 2rem;
 }

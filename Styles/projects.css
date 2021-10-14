@@ -55,14 +55,14 @@
 .timeline ul li .title{
     color: #47FFCE;
     letter-spacing: 30%;
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 .timeline ul li .description{
     /* width: 40%; */
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -94,7 +94,7 @@
     }
 
     .timeline ul li  > div{
-        width: 60%;
+        width: 80%;
     }
 
     .timeline ul li .description{
